@@ -40,7 +40,7 @@
             this.btnNum3 = new System.Windows.Forms.Button();
             this.btnPosNeg = new System.Windows.Forms.Button();
             this.btnNum0 = new System.Windows.Forms.Button();
-            this.btnDash = new System.Windows.Forms.Button();
+            this.btnDecimalSeparator = new System.Windows.Forms.Button();
             this.btnMulti = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@
             // 
             this.txtInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtInput.Location = new System.Drawing.Point(20, 57);
-            this.txtInput.MaxLength = 10;
+            this.txtInput.MaxLength = 16;
             this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(207, 28);
@@ -173,15 +173,15 @@
             this.btnNum0.UseVisualStyleBackColor = true;
             this.btnNum0.Click += new System.EventHandler(this.btnNum0_Click);
             // 
-            // btnDash
+            // btnDecimalSeparator
             // 
-            this.btnDash.Location = new System.Drawing.Point(125, 242);
-            this.btnDash.Name = "btnDash";
-            this.btnDash.Size = new System.Drawing.Size(48, 30);
-            this.btnDash.TabIndex = 12;
-            this.btnDash.Text = ".";
-            this.btnDash.UseVisualStyleBackColor = true;
-            this.btnDash.Click += new System.EventHandler(this.btnDash_Click);
+            this.btnDecimalSeparator.Location = new System.Drawing.Point(125, 242);
+            this.btnDecimalSeparator.Name = "btnDecimalSeparator";
+            this.btnDecimalSeparator.Size = new System.Drawing.Size(48, 30);
+            this.btnDecimalSeparator.TabIndex = 12;
+            this.btnDecimalSeparator.Text = ".";
+            this.btnDecimalSeparator.UseVisualStyleBackColor = true;
+            this.btnDecimalSeparator.Click += new System.EventHandler(this.btnDecimalSeparator_Click);
             // 
             // btnMulti
             // 
@@ -290,7 +290,7 @@
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnMulti);
-            this.Controls.Add(this.btnDash);
+            this.Controls.Add(this.btnDecimalSeparator);
             this.Controls.Add(this.btnNum0);
             this.Controls.Add(this.btnPosNeg);
             this.Controls.Add(this.btnNum3);
@@ -324,7 +324,7 @@
         private System.Windows.Forms.Button btnNum3;
         private System.Windows.Forms.Button btnPosNeg;
         private System.Windows.Forms.Button btnNum0;
-        private System.Windows.Forms.Button btnDash;
+        private System.Windows.Forms.Button btnDecimalSeparator;
         private System.Windows.Forms.Button btnMulti;
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnPlus;
